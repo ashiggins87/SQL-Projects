@@ -99,8 +99,7 @@ SELECT *
 FROM employees
 WHERE first_name = 'Denis' AND first_name = 'Elvis';
     
--- 3.4 (Ex.) Retrieve a list of all employees whose first name is either
-'Kellie' or 'Aruna'
+-- 3.4 (Ex.) Retrieve a list of all employees whose first name is either 'Kellie' or 'Aruna'
 SELECT *
 FROM employees
 WHERE first_name = 'Kellie' OR first_name = 'Aruna';
@@ -125,7 +124,6 @@ WHERE gender = 'F' AND (first_name = 'Kellie' OR first_name = 'Aruna');
 
 ###########
 -- IN / NOT IN
-
 -- 3.7: Retrieve a list of all employees whose first name is either 'Cathie', 'Mark' or 'Nathan'
 SELECT *
 FROM employees
@@ -165,7 +163,6 @@ FROM employees
 WHERE first_name LIKE ('%ar');
 
 -- 4.4: What do you think the result of this query will be?
-
 SELECT *
 FROM employees
 WHERE first_name LIKE('%ar%');
@@ -221,7 +218,6 @@ SELECT * FROM salaries;
 SELECT *
 FROM salaries
 WHERE salary BETWEEN 66000 AND 70000;
-
 
 -- 5.4: Retrieve a list of individuals whose emp_no is not between
 -- 10004 and 10012.
@@ -363,7 +359,6 @@ ORDER BY emp_no
 LIMIT 100;
 
 -- From 5.5: We counted how many first names are in the employees table
-
 SELECT COUNT(first_name)
 FROM employees;
 
